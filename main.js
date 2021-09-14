@@ -1,8 +1,8 @@
 let instaScript = require("./instaSignUp");
 
 var XLSX = require('xlsx')
-var workbook = XLSX.readFile('C:/pepcoding_2021/pepoding_12_21/module_03_promise/activity/instaSignUp/instaData/dataInsta.xlsx');
-var workbook2 = XLSX.readFile('userIdRecord.xlsx');
+var workbook = XLSX.readFile('./dataInsta.xlsx');
+var workbook2 = XLSX.readFile('./userIdRecord.xlsx');
 var sheet_name_list = workbook.SheetNames;
 var sheet_name_list_2 = workbook2.SheetNames;
 var xlData = XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
